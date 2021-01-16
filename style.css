@@ -1,6 +1,6 @@
 body {
   width: 980px;
-  height: 980px;
+  height: 1010px;
   padding: 30px 50px;
   border: 3px solid;
   border-radius: 5px;
@@ -69,10 +69,11 @@ ul {
   font-size: 16px;
 }
 
+.description,
 .units,
 .temperature {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .btn {
