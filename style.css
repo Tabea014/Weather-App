@@ -37,7 +37,7 @@ h4 {
 img {
   border: 6px solid black;
   border-radius: 15px;
-  box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.1);
+  box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.05);
 }
 
 hr {
@@ -46,11 +46,20 @@ hr {
 
 form {
   border: 3px solid black;
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.05);
   width: 300px;
   height: 120px;
   padding-top: 13px;
   position: relative;
   left: 290px;
+}
+
+ul {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  text-align: left;
+  list-style: none;
 }
 
 .row {
@@ -63,11 +72,6 @@ form {
 .temperature {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 22px;
-}
-
-.whp {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
 }
 
 .btn {
