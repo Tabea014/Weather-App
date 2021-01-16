@@ -39,9 +39,10 @@ img {
   font-size: 16px;
 }
 
+.units,
 .temperature {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .whp {
