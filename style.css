@@ -6,4 +6,13 @@ body {
   border-radius: 5px;
   box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.1);
   margin: 20px auto;
+  text-align: center;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lobster", cursive;
 }
