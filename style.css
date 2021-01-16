@@ -28,6 +28,12 @@ h3 {
   margin: 15px auto;
 }
 
+h4 {
+  margin: 25px auto;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
 img {
   border: 6px solid black;
   border-radius: 15px;
