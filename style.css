@@ -1,6 +1,6 @@
 body {
   width: 980px;
-  height: 790px;
+  height: 830px;
   padding: 30px 50px;
   border: 2px solid;
   border-radius: 5px;
@@ -15,4 +15,8 @@ h2,
 h3,
 h4 {
   font-family: "Lobster", cursive;
+}
+
+.row {
+  margin-bottom: 15px;
 }

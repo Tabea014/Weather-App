@@ -23,18 +23,22 @@
 
 
 <form id="city-form">
+    <div class="row">
+        <div class="col">
      <input type="text" 
      placeholder="Enter your city..." 
      autocomplete="off" 
      autofocus="on"
      id="search-city-input"/>
 
+    </div>
+</div>
            
-    <input type="submit" 
-    value="search" />
+    <input class = "btn btn-secondary" type="submit" 
+    value="Search" />
                 
                 
-    <button class="btn btn-primary" 
+    <button class="btn btn-dark" 
     id="currentLocationButton">
     Current City
     </button>
@@ -70,16 +74,16 @@
 
 <div class="row">
     <div class="col">
-         <p>
-            <strong><em>Sunrise: </strong> 08:42 </em> </br> </br>
+         <p id="Sunrise">
+            Sunrise: <span id="Sunrise"> </span> </br> </br>
 
             <img src="images/SunrisePastel.PNG" alt="Sunrise" width=25%> </br>
          </p>
     </div>
 
     <div class="col">
-        <p>
-            <strong><em>Sunset: </strong> 15:42 </em></br> </br>
+        <p id="Sunset">
+            Sunset: <span id="Sunset"> </span> </br> </br>
 
             <img src="images/SunsetPastel.PNG" alt="SunSet" width=25%> </br>
 
