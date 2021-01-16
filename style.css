@@ -1,6 +1,6 @@
 body {
   width: 980px;
-  height: 850px;
+  height: 980px;
   padding: 30px 50px;
   border: 3px solid;
   border-radius: 5px;
@@ -25,6 +25,7 @@ h1 {
 
 h3 {
   font-size: 24px;
+  margin: 15px auto;
 }
 
 img {
