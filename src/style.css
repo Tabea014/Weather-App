@@ -99,3 +99,9 @@ ul {
   top: -110px;
   margin-bottom: -45px;
 }
+
+.units {
+  font-size: 14px;
+  position: relative;
+  top: -5px;
+}
