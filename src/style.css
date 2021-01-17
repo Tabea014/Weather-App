@@ -1,6 +1,6 @@
 body {
   width: 980px;
-  height: 1030px;
+  height: 1080px;
   padding: 30px 50px;
   border: 3px solid;
   border-radius: 5px;
@@ -89,4 +89,11 @@ ul {
   color: black;
   background: #f5f7fa;
   border: 3px solid black;
+}
+
+.CurrentWeatherIcon {
+  position: relative;
+  margin-left: 350px;
+  top: -110px;
+  margin-bottom: -45px;
 }
