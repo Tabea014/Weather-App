@@ -33,7 +33,7 @@ document.querySelector("#city").innerHTML=response.data.name;
 document.querySelector("#temperature").innerHTML=Math.round(response.data.main.temp);
 document.querySelector("#humidity").innerHTML=Math.round(response.data.main.humidity);
 document.querySelector("#Wind").innerHTML=Math.round(response.data.wind.speed);
-document.querySelector("#description").innerHTML=response.data.weather[0].main;
+document.querySelector("#description").innerHTML=response.data.weather[0].description;
 }
 
 //search city

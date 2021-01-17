@@ -78,6 +78,10 @@ ul {
   font-size: 20px;
 }
 
+.description {
+  text-transform: capitalize;
+}
+
 .btn {
   border: 3px solid black;
   border-radius: 5px;
