@@ -1,6 +1,6 @@
 body {
   width: 980px;
-  height: 1040px;
+  height: 1060px;
   padding: 30px 50px;
   border: 3px solid;
   border-radius: 5px;
@@ -128,7 +128,8 @@ ul {
 
 .weather-forecast h3 {
   color: black;
-  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif cursive;
+  font-size: 18px;
   font-weight: 400;
   text-align: center;
   height: 15px;
@@ -139,8 +140,8 @@ ul {
 .weather-forecast img {
   display: block;
   margin: 0 auto;
-  height: 65px;
-  width: 65px;
+  height: 75px;
+  width: 75px;
   border: 6px solid black;
   margin-bottom: 12px;
 }
@@ -148,7 +149,8 @@ ul {
 .weather-forecast-temperature {
   text-align: center;
   color: black;
-  font-size: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
   font-weight: 400;
   height: auto;
   line-height: 15px;

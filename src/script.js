@@ -42,6 +42,20 @@ function formatHours(timestamp) {
   return `${hours}:${minutes}`;
 }
 
+
+function sunriseSunsetHours(timestamp) {
+  let sunriseSunset = new Date(timestamp);
+  let hours = sunriseSunset.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = sunriseSunset.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  return `${hours}:${minutes}`;
+}
+
 //display Weather Response
 function displayWeather (response) {
 document.querySelector("#city").innerHTML=response.data.name;
@@ -49,16 +63,73 @@ document.querySelector("#temperature").innerHTML=Math.round(response.data.main.t
 document.querySelector("#humidity").innerHTML=Math.round(response.data.main.humidity);
 document.querySelector("#Wind").innerHTML=Math.round(response.data.wind.speed);
 document.querySelector("#description").innerHTML=response.data.weather[0].description;
+document.querySelector("#Sunrise").innerHTML = sunriseSunsetHours(
+    response.data.sys.sunrise * 1000
+  );
+  document.querySelector("#Sunset").innerHTML = sunriseSunsetHours(
+    response.data.sys.sunset * 1000
+  );
+
 
 celsiusTemperature = response.data.main.temp;
 
-let iconElement=document.querySelector("#CurrentWeatherIcon");
-iconElement.setAttribute(
-  "src",
-  `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-);
 
+let iconElement=document.querySelector("#CurrentWeatherIcon");
+iconElement.setAttribute("class", displayIcon(response.data.weather[0].icon));
 }
+
+
+
+function displayIcon(iconValue) {
+  if (iconValue === "01d") {
+    return iconElement.setAttribute("src","images/Sun.PNG");
+  }
+
+  if (iconValue === "01n") {
+    return iconElement.setAttribute("src","images/Mond.PNG");
+  }
+
+  if (iconValue === "02d") {
+    return iconElement.setAttribute("src","images/Sun.PNG");
+  }
+
+  if (iconValue === "02n") {
+    return iconElement.setAttribute("src","images/CloudyNight.PNG");
+  }
+
+  if (iconValue === "03d" ||
+    iconValue === "03n" ||
+    iconValue === "04d" ||
+    iconValue === "04n") {
+    return iconElement.setAttribute("src","images/Clouds.PNG");
+  }
+
+  if (iconValue === "09d" ||
+    iconValue === "10d") {
+    return iconElement.setAttribute("src","images/Rainy.PNG");
+  }
+
+  if (iconValue === "09n" ||
+    iconValue === "10n") {
+    return iconElement.setAttribute("src","images/RainyNight.PNG");
+  }
+
+  if (iconValue === "11d" ||
+    iconValue === "11n") {
+    return iconElement.setAttribute("src","images/Thunderstorm.PNG");
+  }
+
+  if (iconValue === "13d" ||
+    iconValue === "13n") {
+    return iconElement.setAttribute("src","images/Sonnenschneewolke.PNG");
+  }
+
+  if (iconValue === "50d" ||
+    iconValue === "50n") {
+    return iconElement.setAttribute("src","images/Clouds.PNG");
+  }
+}
+
 
 
 function displayForecast(response) {
