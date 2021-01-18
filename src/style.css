@@ -108,4 +108,14 @@ ul {
   font-size: 14px;
   position: relative;
   top: -5px;
+  text-decoration: none;
+}
+
+.active {
+  color: black;
+  cursor: default;
+}
+
+.active:hover {
+  text-decoration: none;
 }
