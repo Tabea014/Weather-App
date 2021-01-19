@@ -63,8 +63,8 @@ document.querySelector("#temperature").innerHTML=Math.round(response.data.main.t
 document.querySelector("#humidity").innerHTML=Math.round(response.data.main.humidity);
 document.querySelector("#Wind").innerHTML=Math.round(response.data.wind.speed);
 document.querySelector("#description").innerHTML=response.data.weather[0].description;
-document.querySelector("#Sunrise").innerHTML = sunriseSunsetHours(response.data.sys.sunrise * 1000 + response.data.timezone);
-document.querySelector("#Sunset").innerHTML = sunriseSunsetHours(response.data.sys.sunset * 1000 + response.data.timezone);
+document.querySelector("#Sunrise").innerHTML = sunriseSunsetHours((response.data.sys.sunrise  + response.data.timezone)* 1000);
+document.querySelector("#Sunset").innerHTML = sunriseSunsetHours((response.data.sys.sunset  + response.data.timezone) * 1000);
 document.querySelector("#date").innerHTML = formatHours((response.data.dt + response.data.timezone) * 1000);
 
 celsiusTemperature = response.data.main.temp;
