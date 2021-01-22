@@ -140,6 +140,8 @@ function searchLocation(position) {
   let apiKey = "e516d42d482ea540c36ea946d29ffcbe";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric&appid=${apiKey}`;
   axios.get(apiUrl).then(displayWeather);
+    apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(displayForecast);
 }
 
 
@@ -153,6 +155,11 @@ function getCurrentLocation (event) {
 
 let currentLocationButton = document.querySelector("#currentLocationButton");
 currentLocationButton.addEventListener("click", getCurrentLocation); 
+
+
+
+
+
 
 
 
